@@ -129,12 +129,26 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.about: {
-                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getApplicationContext());
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
 
                 alertDialogBuilder.setTitle("About");
-                alertDialogBuilder.setMessage("This app ");
+                alertDialogBuilder.setMessage("This app was built for educational purposes only to learn Android application creation.\n" +
+                        "Source code is available at \n" +
+                        "https://github.com/EstebanZapata/GetSchwifty\n" +
+                        "\"Get Schwifty\" is owned by Williams Street Records, and is popularly known from Rick and Morty, owned by Adult Swim.\n" +
+                        "It can be found at \n" +
+                        "https://soundcloud.com/wmstrecs/get-schwifty-full-track-1\n" +
+                        "The cromulon images are owned by thebuggalo and can be found at \n" +
+                        "https://www.teepublic.com/user/thebuggalo");
+
+                AlertDialog alertDialog = alertDialogBuilder.create();
+                alertDialog.show();
+
+                break;
             }
         }
+
+        return true;
     }
 
     protected void syncImages() {
