@@ -139,7 +139,9 @@ public class MainActivity extends AppCompatActivity {
                         "It can be found at \n" +
                         "https://soundcloud.com/wmstrecs/get-schwifty-full-track-1\n" +
                         "The cromulon images are owned by thebuggalo and can be found at \n" +
-                        "https://www.teepublic.com/user/thebuggalo");
+                        "https://www.teepublic.com/user/thebuggalo\n" +
+                        "The ic_launcher can be found at\n" +
+                        "http://bialystock-and-bloom.tumblr.com/post/130507189831/chaos-chaos-do-you-feel-it");
 
                 AlertDialog alertDialog = alertDialogBuilder.create();
                 alertDialog.show();
